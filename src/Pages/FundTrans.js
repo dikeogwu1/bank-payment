@@ -10,7 +10,7 @@ export default function FundTrans() {
   const amountContainer = useRef(null)
 
   const config = {
-    public_key: 'FLWPUBK_TEST-143f6993ec7cfd5e5bae8cf951cbbe60-X',
+    public_key: process.env.REACT_APP_FLUTTERWAVE_PUBLIC,
     tx_ref: Date.now(),
     amount: amount,
     currency: 'NGN',
