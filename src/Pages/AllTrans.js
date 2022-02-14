@@ -26,7 +26,7 @@ const AllTrans = () => {
     setLoading(true)
     const options = {
       method: 'GET',
-      url: 'https://api.flutterwave.com/v3/transactions',
+      url: 'https://pay-d-easy.netlify.app/v3/transactions',
       params: { from: '2022-02-11', page: '1', currency: 'NGN' },
       headers: {
         Accept: 'application/json',
